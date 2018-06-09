@@ -193,17 +193,17 @@ html,body {
 #navscreen #menu li {
       display: block;
       text-align: center;
-      padding: 20px 0;
+      padding: 10px 0;
       margin-left: -40px;
       font-size: 1rem;
-      line-height: 2.5rem;
+      line-height: 3rem;
       cursor: pointer;
       transition: all 0.3s ease-out;
       color: #fff;
 }
 
 #navscreen li:nth-child(1) {
-       margin-top:155px;
+       margin-top:15vh;
 
 }
 
