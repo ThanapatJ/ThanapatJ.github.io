@@ -20,7 +20,6 @@
    new WOW().init();
     </script>
    <script src="js/jquery-3.3.1.min.js"></script>
-
    <script src="js/lory.min.js"></script>
    <!--
    <script src="js/jquery.easeScroll.js"></script>
@@ -41,7 +40,7 @@
 -->
 </head>
 <body>
-  <div class="Home">
+  <div id="Home" class="Home">
             <div class="blurstars rellax" data-rellax-speed="2"></div>
             <div class="ground rellax"data-rellax-speed="3"></div>
             <div class="city3 rellax" data-rellax-speed="6"></div>
@@ -59,7 +58,39 @@
             <div class="mefirst rellax" data-rellax-speed="19">  </div>
             <div class="arrow rellax" data-rellax-speed="2">  </div>
   </div>
-  <div class="Aboutme">
+
+  <nav>
+           <div id="toggle">
+                 <div class="span" id="one"></div>
+                 <div class="span" id="two"></div>
+                 <div class="span" id="three"></div>
+           </div>
+     </nav>
+
+     <div id="navscreen">
+           <ul id="menu">
+                 <li> <span style="font-size:2rem"> <i class="fa fa-paper-plane"></i></li>
+                 <li><a href="#Home" class="smoothlink" >Home</a></li>
+                 <li><a href="#Aboutme" class="smoothlink">About me</a></li>
+                 <li><a href="#Education" class="smoothlink">Education</a></li>
+                 <li><a href="#Skills" class="smoothlink">Skills</a></li>
+                 <li><a href="#Activities" class="smoothlink">Activities</a></li>
+                 <li><a href="#OtherWorks" class="smoothlink">Other Works</a></li>
+           </ul>
+     </div>
+
+     <div class="loader">
+        <div class="sk-folding-cube">
+         <div class="sk-cube1 sk-cube"></div>
+         <div class="sk-cube2 sk-cube"></div>
+         <div class="sk-cube4 sk-cube"></div>
+         <div class="sk-cube3 sk-cube"></div>
+       </div>
+     </div>
+
+
+
+  <div id="Aboutme" class="Aboutme">
             <h1>About me</h1>
             <!-- pen & phone -->
             <div class="pennphone">
@@ -197,7 +228,7 @@
           </div>
 
 
-  <div class="Activities">
+  <div id="Activities" class="Activities">
 <h1 class="activitiestext wow fadeInDown" data-wow-duration="2s" >Activities</h1>
 <div class="activitiestimeline">
         <ul>
@@ -758,6 +789,51 @@
 </body>
 
 
+
+
+<!-- loader-->
+          <script>
+                window.addEventListener("load", function () {
+                  const loader = document.querySelector(".loader");
+                  loader.className += " hidden";
+                });
+          </script>
+
+
+
+
+
+<!-- smoothnavigation-->
+        <script>
+
+        $(document).ready(function() {
+          $('.smoothlink').click(function(e){
+            var linkHref = $(this).attr('href');
+
+                   $('html,body').animate({
+                     scrollTop: $(linkHref).offset().top
+                   }, 1000);
+
+            e.preventDefault();
+          });
+
+     });
+
+     </script>
+
+
+<!-- navscreen-->
+<script>
+
+      $("#toggle").click(function() {
+
+      $(this).toggleClass('on');
+      $("#navscreen").toggleClass("active");
+
+      });
+
+
+      </script>
 
 
 <!-- animation-->
