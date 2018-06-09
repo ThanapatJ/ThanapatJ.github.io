@@ -122,6 +122,7 @@ html,body {
     opacity: 0;
   }
 }
+
 /*---------------------------------nav screen----------------------------*/
 #toggle {
 
@@ -192,17 +193,17 @@ html,body {
 #navscreen #menu li {
       display: block;
       text-align: center;
-      padding: 10px 0;
+      padding: 20px 0;
       margin-left: -40px;
       font-size: 1rem;
-      line-height: 3rem;
+      line-height: 2.5rem;
       cursor: pointer;
       transition: all 0.3s ease-out;
       color: #fff;
 }
 
 #navscreen li:nth-child(1) {
-       margin-top:15vh;
+       margin-top:155px;
 
 }
 
@@ -221,6 +222,15 @@ color: #f0f654;
       visibility: visible;
       opacity: 0.970;
 }
+
+
+
+
+
+
+
+
+
 
 
 .Home{
@@ -254,12 +264,17 @@ color: #f0f654;
 
 
 }
-/*Activities + OtherWorks */
 .Activities{
   background-color: #0f0f0f;
   width: 100%;
-}
+  height: 100vh;
 
+}
+.Otherworks{
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 100vh;
+}
 /*home div*/
 
 .ground{
@@ -506,7 +521,6 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
-  overflow: hidden;
 
 }
 .aboutmeinfo a {
@@ -986,28 +1000,16 @@ transition-duration: 200ms;
   color: white;
 }
 
-/*activities div*/
-.activitiestext {
-  padding-top: 100px;
-}
-.Activities, .Otherworks{
-  width: 100%;
-  position: absolute;
+
+/*activities*/
+.Activities{
   font-family: 'Coming Soon', cursive;
   line-height: 40px;
   font-size: .84rem;
   color: rgb(238, 238, 238);
 }
 .activitiestext{
-  margin: 0;
-  padding: 0;
-  font-family: 'Reenie Beanie', cursive;
-  color: #f0f654;
-  text-align: center;
-  font-size: 4rem;
-  margin-top: 50px;
-
-
+  padding-top: 50px;
 }
 
 .activitiestimeline{
@@ -1024,7 +1026,7 @@ transition-duration: 200ms;
   width: 2px;
   height: 100%;
   background: #f0f654;
-  z-index: 5;
+
 }
 .content h3{
   color: white;
@@ -1116,6 +1118,7 @@ transition-duration: 200ms;
   line-height: 25px;
 }
 .otherworkstext{
+  position: relative;
   background: #0f0f0f;
   padding: 70px 0 70px 0;
   font-family: 'Reenie Beanie', cursive;
@@ -1125,6 +1128,7 @@ transition-duration: 200ms;
   margin-top: 50px;
   margin-bottom: 50px;
   z-index: 10;
+
 }
 
 
@@ -1188,9 +1192,6 @@ button {
 
 
 
-
-
-
 /*media queries*/
 /*
   ##Device = Desktops
@@ -1202,11 +1203,6 @@ button {
   html{
   font-size: 18px;
 }
-.Activities{
-
-  top: 435%;
-}
-
 .activitiestimeline::before{
   left: 20px;
 }
@@ -1228,6 +1224,7 @@ button {
   left: 50px;
   right: inherit;
 }
+
 }
 
 
@@ -1291,7 +1288,7 @@ button {
 @media (max-width: 320px){
 
   html{
-  font-size: 12px;
+  font-size: 11px;
 }
 .Education{
   height: 200vh;
