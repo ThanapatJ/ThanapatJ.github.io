@@ -21,31 +21,27 @@ html,body {
   height: 770px;
 }
 .Education{
-  background-color: blue;
+  background-color: #0f0f0f;
   width: 100%;
   height: 500px;
 }
 .Skills{
-  background-color: lightyellow;
+  background-color: #0f0f0f;
   width: 100%;
   height: 580px;
 }
 .subskills{
-  background-color: yellow;
+  background-color: #0f0f0f;
   width: 100%;
 
 
 }
+/*Activities + OtherWorks */
 .Activities{
-  background-color: pink;
+  background-color: #0f0f0f;
   width: 100%;
-  height: 100vh;
 }
-.Otherworks{
-  background-color: lightblue;
-  width: 100%;
-  height: 100vh;
-}
+
 /*home div*/
 
 .ground{
@@ -292,6 +288,7 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
+  overflow: hidden;
 
 }
 .aboutmeinfo a {
@@ -771,6 +768,210 @@ transition-duration: 200ms;
   color: white;
 }
 
+/*activities div*/
+.activitiestext {
+  padding-top: 100px;
+}
+.Activities, .Otherworks{
+  width: 100%;
+  position: absolute;
+  font-family: 'Coming Soon', cursive;
+  line-height: 40px;
+  font-size: .84rem;
+  color: rgb(238, 238, 238);
+}
+.activitiestext{
+  margin: 0;
+  padding: 0;
+  font-family: 'Reenie Beanie', cursive;
+  color: #f0f654;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 50px;
+
+
+}
+
+.activitiestimeline{
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+
+}
+.activitiestimeline::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #f0f654;
+  z-index: 5;
+}
+.content h3{
+  color: white;
+  font-size: 1.12rem;
+}
+.activitiestimeline ul{
+  margin: 0;
+  padding:0;
+}
+
+.activitiestimeline ul li{
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 35px;
+  box-sizing: border-box;
+
+}
+.activitiestimeline ul li:nth-child(odd){
+  float: left;
+  text-align: right;
+  clear: both;
+}
+.activitiestimeline ul li:nth-child(even){
+  float: right;
+  text-align: left;
+  clear: both;
+}
+.content{
+  padding-bottom: 20px;
+}
+.activitiestimeline ul li:nth-child(odd)::before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(240,246,84,1) ;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(240,246,84,0.35);
+}
+.activitiestimeline ul li:nth-child(even)::before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background:  rgba(240,246,84,1) ;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(240,246,84,0.35);
+}
+.activitiestimeline ul li h3{
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.activitiestimeline ul li p{
+  margin: 10px 0 0;
+  padding: 0;
+}
+.activitiestimeline ul li .date h4{
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+}
+.activitiestimeline ul li:nth-child(odd) .date{
+  position: absolute;
+  top: 12px;
+  right: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  border: 2px solid #f0f654;
+  border-radius: 18px;
+  color: #f3f3f3;
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+.activitiestimeline ul li:nth-child(even) .date{
+  position: absolute;
+  top: 12px;
+  left: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  border: 2px solid #f0f654;
+  border-radius: 18px;
+  color: #f3f3f3;
+  line-height: 25px;
+}
+.otherworkstext{
+  background: #0f0f0f;
+  padding: 70px 0 70px 0;
+  font-family: 'Reenie Beanie', cursive;
+  color: #f0f654;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  z-index: 10;
+}
+
+
+
+
+
+
+/*carousel*/
+.carousel__frame {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+}
+
+img {
+      width: 100%;
+      background-size: cover;
+      display: table;
+}
+
+.carousel__slides {
+      display: block;
+}
+
+.carousel__item {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: inline-block;
+}
+
+.carousel__prev, .carousel__next {
+      font-size: 1rem;
+      position: absolute;
+      top: 45%;
+}
+
+.carousel__prev {
+      left: 2rem;
+}
+
+.carousel__next {
+      right: 2rem;
+}
+
+button:focus {
+      outline: none;
+}
+
+button {
+      background: rgba(0,0,0,0);
+      border: none;
+      color: #fff;
+}
+
+
+
+
+
 
 /*media queries*/
 /*
@@ -783,7 +984,32 @@ transition-duration: 200ms;
   html{
   font-size: 18px;
 }
+.Activities{
 
+  top: 435%;
+}
+
+.activitiestimeline::before{
+  left: 20px;
+}
+.activitiestimeline ul li:nth-child(even),
+.activitiestimeline ul li:nth-child(odd){
+  width: 100%;
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.activitiestimeline ul li:nth-child(even)::before,
+.activitiestimeline ul li:nth-child(odd)::before{
+  top: -18px;
+  left: 16px;
+}
+.activitiestimeline ul li:nth-child(even) .date,
+.activitiestimeline ul li:nth-child(odd) .date{
+  top: -30px;
+  left: 50px;
+  right: inherit;
+}
 }
 
 
@@ -834,7 +1060,7 @@ transition-duration: 200ms;
 @media (max-width: 481px){
 
   html{
-  font-size: 16px;
+  font-size: 14px;
 }
 
 }
@@ -847,7 +1073,7 @@ transition-duration: 200ms;
 @media (max-width: 320px){
 
   html{
-  font-size: 14px;
+  font-size: 12px;
 }
 .Education{
   height: 200vh;
