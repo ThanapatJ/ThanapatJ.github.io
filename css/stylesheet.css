@@ -675,9 +675,11 @@ transition-duration: 200ms;
   font-family: 'Coming Soon', cursive;
   top: 220%;
   width: 100%;
-  height: 500px;
+  height: 550px;
   line-height: 25px;
   font-size: .85rem;
+
+
 
 }
 .educationtext{
@@ -790,10 +792,10 @@ transition-duration: 200ms;
 
 /*skills*/
 .mainskillssection{
-  background-color:#0f0f0f;
+  background-color: #0f0f0f;
   width: 100%;
   height:550px;
-  top: 280%;
+  top: 120rem;
   position: absolute;
   display: flex;
 }
@@ -862,7 +864,7 @@ transition-duration: 200ms;
   width: 100%;
   height:550px;
   position: absolute;
-  top: 340%;
+  top: 148rem;
 
 
 }
@@ -1218,12 +1220,17 @@ button {
   ##Device = Laptops, Desktops
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
 
   html{
   font-size: 21px;
 }
-
+  .mainskillssection{
+      top: 125rem;
+  }
+  .subskillssection{
+    top: 155rem;
+  }
 }
 
 /*-------------------------------------*/
@@ -1361,10 +1368,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 }
 /*all content down*/
 .mainskillssection{
-  top: 350%;
+  top: 155rem;
 }
 .subskillssection{
-  top: 410%;
+  top: 185rem;
 
 }
 .activities{
@@ -1420,12 +1427,8 @@ and (-webkit-min-device-pixel-ratio: 1)  {
          height: 42%;
          top: 18%;
    }
-   .mainskillssection{
-     top: 375%;
-   }
-   .subskillssection{
-     top: 445%;
-   }
+
+
    .activities{
    top: 620%;
    }
@@ -1467,12 +1470,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
               top: 18%;
         }
 
-        .mainskillssection{
-        top: 375%;
-        }
-        .subskillssection{
-          top: 450%;
-          }
+
           .activities{
           top: 620%;
           }
@@ -1513,14 +1511,8 @@ and (-webkit-min-device-pixel-ratio: 1)  {
          top: 20%;
    }
 
-   .mainskillssection{
 
-     top: 390%;
-   }
-   .subskillssection{
 
-     top: 473%;
-   }
    .activities{
    top: 675%;
    }
@@ -1560,14 +1552,6 @@ and (orientation : landscape) {
                 top: 17%;
           }
 
-          .mainskillssection{
-
-            top: 390%;
-          }
-          .subskillssection{
-
-            top: 473%;
-          }
           .activities{
           top: 660%;
           }
@@ -1610,14 +1594,7 @@ and (orientation : landscape) {
                 top: 22%;
           }
 
-          .mainskillssection{
 
-            top: 410%;
-          }
-          .subskillssection{
-
-            top: 505%;
-          }
           .activities{
           top: 735%;
           }
