@@ -501,15 +501,14 @@ transition-duration: 200ms;
 }
 
 .notebg{
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   background-image: url('../images/aboutmepaper.jpg');
   background-repeat: no-repeat;
-  background-position: 50% 15%;
   position: absolute;
-  top: 5%;
-  left: 0%;
-  transform: translate(-50%,-50%);
+  background-position: 50% 15%;
 
 
 }
