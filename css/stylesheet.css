@@ -167,7 +167,7 @@ html,body {
       position: absolute;
       background: #0f0f0f;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       visibility: hidden;
       opacity: 0;
       transition: all 1s ease-out;
@@ -238,7 +238,7 @@ color: #f0f654;
   padding: 0;
   background: url('../images/bg.jpg');
   width: 100%;
-  height: 110vh;
+  height: 130vh;
   position: relative;
   overflow: hidden;
 
@@ -1259,6 +1259,7 @@ button {
   margin: 15px;
   margin-top: 45px;
 }
+
 }
 
 /*
