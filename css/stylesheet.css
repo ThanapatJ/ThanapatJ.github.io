@@ -226,11 +226,95 @@ color: #f0f654;
 
 
 
+.box1 {
+      height: 25px;
+      width: 25px;
+      position: fixed;
+      top: 30%;
+      left: 4%;
+      border: 1.5px solid #ffbe76;
+      border-radius: 50%;
+      animation: animaterotatation 50s linear infinite;
+      transition: all 0.3s ease-out;
 
 
+}
+.hexagon{
+  position: fixed;
+  top: 5%;
+  left: 18%;
+  transform: rotate(10deg);
+  animation: animaterotatation 30s linear infinite;
+  transition: all 0.3s ease-out;
+}
 
+.box2 {
+      height: 50px;
+      width: 50px;
+      position: fixed;
+      top: 50%;
+      left: 60%;
+      border: 1.5px solid #a29bfe ;
+      transform: rotate(50deg);
+      border-radius: 3px;
+      animation: animaterotatation 50s linear infinite;
+      transition: all 0.3s ease-out;
+}
 
+.triangle {
+      position: fixed;
+      top: 5%;
+      left: 80%;
+      transform: rotate(10deg);
+      animation: animaterotatation 30s linear infinite;
+      transition: all 0.3s ease-out;
+}
+.waves{
+  top: 55%;
+  left: 30%;
+  position: fixed;
+  animation: animaterotatation 35s linear infinite;
+  transition: all 0.3s ease-out;
+}
+.box4 {
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  top: 78%;
+  left: 20%;
+  border: 1px solid lightgreen;
+  transform: rotate(80deg);
+  border-radius: 3px;
+  animation: animaterotatation 35s linear infinite;
+  transition: all 0.3s ease-out;
+}
 
+.box5 {
+  height: 20px;
+  width: 20px;
+  position: fixed;
+  top: 88%;
+  left: 75%;
+  border: 1px solid #ff7979;
+  border-radius: 50%;
+  animation: animaterotatation 60s linear infinite;
+  transition: all 0.3s ease-out;
+
+}
+@keyframes animaterotatation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+      transform: translateY(100px) rotate(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+      opacity: 1;
+  }
+}
 
 
 .Home{
@@ -261,6 +345,7 @@ color: #f0f654;
 .subskills{
   background-color: #0f0f0f;
   width: 100%;
+
 
 
 }
@@ -877,6 +962,7 @@ transition-duration: 200ms;
 .subskills{
   display: flex;
   justify-content: space-between;
+  z-index: 5;
 }
 .subskillsmain{
 
@@ -888,11 +974,13 @@ transition-duration: 200ms;
   border-radius: 10px;
   font-family: 'Comfortaa', cursive;
   font-size: 0.7rem;
+  z-index: 5;
 }
 .subskillsmain p{
   padding-left: 48px;
   padding-right: 48px;
   color: #f3f3f3;
+  z-index: 5;
 }
 .subskilltop{
   width: 100%;
@@ -902,11 +990,13 @@ transition-duration: 200ms;
   text-align: center;
   margin-top: -22px;
   border-radius: 10px 10px 0 0;
+  z-index: 5;
 
 }
 .subskilltop p{
   font-size: 0.85rem;
   color: #0f0f0f;
+  z-index: 5;
 
 }
 
@@ -1259,7 +1349,9 @@ button {
   margin: 15px;
   margin-top: 45px;
 }
-
+.box1, .box2, .box4, .box5, .hexagon, .waves, .triangle {
+  display: none;
+}
 }
 
 /*
