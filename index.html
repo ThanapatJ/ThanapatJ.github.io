@@ -331,6 +331,38 @@
               </li>
               <li>
                 <div class="content">
+                    <h3 class="wow fadeIn" data-wow-duration="2s">“13th EU Thailand Inter-varsity Debate Championship” : <span style="color:#f0f654">National Contest</span></h3>
+                    <div class="js-carousel-twopfive">
+                      <figure class="carousel__frame js-carousel__frame">
+                            <div class="carousel__slides js-carousel__slides">
+                                  <img src="images/debate/debate1.jpg" class="carousel__item" />
+                                  <img src="images/debate/debate2.jpg" class="carousel__item" />
+                                  <img src="images/debate/debate3.jpg" class="carousel__item" />
+                                  <img src="images/debate/debate4.jpg" class="carousel__item" />
+                                  <img src="images/debate/debate5.jpg" class="carousel__item" />
+                                  <img src="images/debate/debate6.jpg" class="carousel__item" />
+                                  <img src="images/debate/debate7.jpg" class="carousel__item" />
+
+                            </div>
+                            <button class="carousel__prev js-carousel__prev">
+                                  <i class="fa fa-chevron-left"></i>
+                                  </button>
+                            <button class="carousel__next js-carousel__next">
+                                  <i class="fa fa-chevron-right"></i>
+                            </button>
+                      </figure>
+                    </div>
+                    <p class="wow fadeIn" data-wow-duration="2s"><span style="color:#82ccdd"> <strong>Participated</strong></span> in the “13th European Union in Thailand National Intervarsity Debate Championship” held at Mahidol University International College (MUIC).
+                       I applied for the Rookie team as it was my very first time joining the debate. My team was privileged to have the opportunity to compete in the <span style="color:#9FA8DA"> <strong>HS Rookie Grand Finals </strong></span>round.
+                        At the end of the competition, I was honored to have been selected as the <span style="color:#94cc6f"> <strong>4th Best Rookie speaker</strong></span>. </p>
+
+                </div>
+                <div class="date">
+                  <h4>August 2018</h4>
+                </div>
+              </li>
+              <li>
+                <div class="content">
                     <h3 class="wow fadeIn" data-wow-duration="2s">IT CAMP 14 KMITL</h3>
                     <div class="js-carousel-three">
                       <figure class="carousel__frame js-carousel__frame">
@@ -351,7 +383,7 @@
                       </figure>
                     </div>
                     <p class="wow fadeIn" data-wow-duration="2s"> <span style="color:#82ccdd"> <strong>Participated</strong></span> in "IT CAMP 14" arranged by the faculty of information and technology @King Mongkut's Institute of Technology Ladkrabang.
-                      " I applied for the  <span style="color:#B39DDB"> <strong>DTA48</strong></span>  <span style="color:#82ccdd"> <strong>(Data Science) </strong></span> subcamp and after completing the final project, my group was honored to have received <span style="color:#9FA8DA"> <strong>the Winner Award </strong></span>. " </p>
+                      " I applied for the  <span style="color:#B39DDB"> <strong>DTA48</strong></span>  <span style="color:#82ccdd"> <strong>(Data Science) </strong></span> subcamp and after completing the final project, my group was honored to have received <span style="color:#6fcc90"> <strong>the Winner Award </strong></span>. " </p>
                 </div>
                 <div class="date">
                   <h4>June 2018</h4>
@@ -924,7 +956,7 @@
     <script>
 
           document.addEventListener('DOMContentLoaded', function() {
-          run(); run2(); run3(); run4(); run5(); run6(); run7(); run8(); run9(); run10(); run11(); run12(); run13(); run14(); run15(); run16(); run17();
+          run(); run2(); run2p5(); run3(); run4(); run5(); run6(); run7(); run8(); run9(); run10(); run11(); run12(); run13(); run14(); run15(); run16(); run17();
           });
 
           function run() {
@@ -940,6 +972,17 @@
           }
           function run2() {
                 var slider = document.querySelector('.js-carousel-two');
+                lory(slider, {
+                infinite: 1,
+                enableMouseEvents: true,
+                classNameFrame: 'js-carousel__frame',
+                classNameSlideContainer: 'js-carousel__slides',
+                classNamePrevCtrl: 'js-carousel__prev',
+                classNameNextCtrl: 'js-carousel__next',
+                });
+          }
+          function run2p5() {
+                var slider = document.querySelector('.js-carousel-twopfive');
                 lory(slider, {
                 infinite: 1,
                 enableMouseEvents: true,
