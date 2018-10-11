@@ -8,6 +8,9 @@ html,body {
 body{
   overflow-x: hidden;
 }
+strong ,b {
+  font-weight: 600;
+}
 .loader{
   position: fixed;
   z-index: 984513;
