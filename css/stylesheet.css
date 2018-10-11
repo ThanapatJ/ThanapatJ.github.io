@@ -1290,7 +1290,7 @@ transition-duration: 200ms;
 .activitiestimeline ul li:nth-child(even),
 .activitiestimeline ul li:nth-child(odd){
   width: 100%;
-  text-align: left;
+  text-align: justify;
   padding-left: 50px;
   padding-bottom: 50px;
 }
