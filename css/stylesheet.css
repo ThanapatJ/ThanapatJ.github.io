@@ -657,7 +657,7 @@ h1 {
 }
 .aboutmeinfo a {
   text-decoration: none;
-color: #02284e;
+color: #0f0f0f;
 
 -webkit-transition-duration: 200ms;
 transition-duration: 200ms;
@@ -824,7 +824,7 @@ transition-duration: 200ms;
 /*contact*/
 .contact a{
   text-decoration: none;
-  color: #dff9fb;
+  color: white;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
